@@ -32,7 +32,7 @@
     <p>Quando alteramos o valor do dividendo (25), podemos acelerar a reprodução, ou deixá-la mais lenta. Por exemplo, ao abaixar para 1/1, é mostrado 1 frame a cada 1 segundo, fazendo que o vídeo aparenta estar travado, visto que cada frame é atualizado a cada segundo. Quando alteramos para 1/1000, o vídeo é reproduzido de forma bem mais rápida, visto que todos os frames são mostrados em intervalos menores e o vídeo inteiro é acelerado</p>
     <br><br><br>
     <h1>Leitura de imagem de câmera: O programa “L1_3_webcam.py” realiza a leitura de imagens da câmera instalada no computador e exibe a sequência das imagens mostradas numa janela do linux. Execute e verifique o resultado:</h1>
-    <p>APara este código, foi solicitado que ao pressionar a tecla X no teclado, é salva uma foto do frame em questão. Essa função pode ser feita com a adição das seguintes linhas no código:</p>
+    <p>Para este código, foi solicitado que ao pressionar a tecla X no teclado, é salva uma foto do frame em questão. Essa função pode ser feita com a adição das seguintes linhas no código:</p>
     <p><b>if cv.waitKey(1) == ord('x'):</b></p>
     <p><b>    cv.imwrite('foto1.png', frame):</b></p>
     <p>Inserimos logo abaixo da outra função “If”. No caso a adição destas linhas fazem que ao ser pressionado o “X”, o frame é salvo como uma imagem com o nome de “foto1.png”. Caso nenhuma tecla seja apertada, nada acontece.</p>
