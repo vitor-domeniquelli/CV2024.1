@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página Pessoal</title>
+    <title>Relatório de atividade prática<br>Visão Computacional<br>Experimento 1 - Captura de imagem e vídeo<br><br>THIAGO HASHIYA ODA  11201810891<br>VITOR DOMENIQUELLI CHAGAS   11201810504<br> IVAN SALVATORE RUBINO  11025213</title>
 </head>
 <body>
-    <h1>Quem sou eu</h1>
-    <p>Meu nome é Thiago Oda e estudo na Federal do ABC (UFABC).</p>
-    <img src="Oda.png" alt="Minha Foto">
-    <h1>Hobbys</h1>
-    <p>Impressão 3D, Modelagem 3D, Programação, Hardware, Periféricos, Airsoft, Áudio,  Teclados Mecânicos, SFFPCs, Arduino, QMK, VIAL.</p>
-    <img src="desktop.jpeg" alt="Minha área de trabalho">
-    <p>SFFPC e Creality Ender 3.</p>
+    <h1>OBJETIVOS</h1>
+    <p>Conhecer os comandos para visualizar e gravar imagens e vídeos no Ubuntu com o OpenCV, gravar um Vídeo e mostrá-lo no relatório e  Elaborar o relatório em equipe de alunos.</p>
+    <br><br><br>
+    <h1>Parte 1<br>Leitura de imagem em arquivo: O programa “L1_1_img.py” realiza a leitura e de imagem gravado num arquivo e mostra a imagem numa janela do linux. Além disso, o programa permite salvar a imagem em arquivo. Execute e verifique o resultado:</h1>
+    <p>Ao rodar o programa, foi observado que a imagem apresentada está em escala de cinza. A imagem abre desse jeito visto que dentro do código .py existe a seguinte linha de comando:.</p>
+    <p>img = cv.imread('messi5.jpg',0)</p>
+    <p>Quando verificamos na documentação do OpenCV, é mencionado que o último termo define como que a imagem será lida, onde com o valor 0, é utilizado em escala de cinza. Para que a imagem seja obtida com cores, podemos alterar esse parâmetro para 1, conforme abaixo:.</p>
+    <p>img = cv.imread('messi5.jpg',1)</p>
+    
+
+    
     <h1>Linguas</h1>
-    <label for="file">Português - BR (Lingua materna):</label>
-    <progress id="file" value="95" max="100">Lingua Materna</progress><br>
-    <label for="file">Ingles (Avançado):</label>
-    <progress id="file" value="85" max="100">Avançado</progress><br>
-    <label for="file">Japonês (Iniciante):</label>
-    <progress id="file" value="15" max="100">Iniciante</progress><br>
+
 </body>
 </html>
