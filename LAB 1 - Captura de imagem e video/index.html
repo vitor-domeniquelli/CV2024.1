@@ -40,7 +40,7 @@
     <h1>Gravação de vídeo da câmera: O programa “L1_4_webcap.py” realiza a leitura de imagens da câmera, exibe a sequência de imagens numa nova janela do Linux, e ao digitar a tecla “q” salva toda a sequência de imagens num arquivo “saida.avi” no formato AVI de vídeo. Execute e verifique o resultado:</h1>
     <p>No código acima, foi visto que o vídeo está com uma reprodução bem lenta e o vídeo está invertido, para resolver esses dois problemas, podemos realizar as seguintes alterações:</p>
     <p><b><s>fps = 10.0 </s> ->   fps = 30.0</b></p>
-    <p><b><s>frame = cv.flip(frame, 0) ->   #frame = cv.flip(frame, 0)</b></p>
+    <p><b><s>frame = cv.flip(frame, 0) </s> ->   #frame = cv.flip(frame, 0)</b></p>
     <p>A primeira alteração resulta na fluidez da imagem, onde aumentamos a taxa de atualização da reprodução. A segunda alteração é relacionada à inversão do vídeo. Esse ajuste pode ser feito de duas maneiras, a que optamos foi por desabilitar a função de cv.flip por adicionar o “#” no início. Outra maneira poderia ser por alterar o segundo parâmetro da função para 1, o que resulta apenas no espelhamento do vídeo, fazendo que movimentos para a esquerda fiquem na mesma referência para o autor do vídeo.</p>
     <br><br><br>
     <br><br><br>
