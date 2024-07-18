@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de atividade prática<br>Visão Computacional<br>Experimento 2 - Calibração de imagem<br><br>THIAGO HASHIYA ODA  11201810891<br>VITOR DOMENIQUELLI CHAGAS   11201810504<br> IVAN SALVATORE RUBINO  11025213</title>
+    <style>
+        body {
+            align-items: center;
+        }
+        h1 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html">Página principal</a>
+    <h1>Relatório de atividade prática<br>Visão Computacional<br>Experimento 2 - Calibração de imagem<br><br>THIAGO HASHIYA ODA  11201810891<br>VITOR DOMENIQUELLI CHAGAS   11201810504<br> IVAN SALVATORE RUBINO  11025213</h1>
+    <h1>OBJETIVOS</h1>
+    <p>Entender os conceitos básicos essenciais de parametros intrinsicos e extrinsicos de câmeras. Realizar um experimento de calibração de câmeras. Elaborar o relatório em equipe de alunos.</p>
+    <br><br><br>
+    
+    <h1>Parte 1<br>Estudo da teoria sobre parâmetros da geometria de câmeras. Estudar
+detalhadamente os seguintes itens (não é necessário executar):</h1>
+<br><br><br>
+    
+    <h1>Parte 2<br>Executar um exemplo de calibração de câmeras.<br>O procedimento de calibração de câmera com imagens fornecidas de exemplo: O programa “L2_cal.py” realiza a calibração de cameras conforme o exmplo do item 2.b) acima. Execute este programa dentro da pasta descompactada com as imagens fornecidas, e verifique o resultado.</h1>
+<p><pre>Camera matrix : 
+
+    <p>Com as imagens presentes na pasta, rodamos o cal e obtivemos os seguintes valores para as matrizes das imagens:</p>
+
+[[533.00375587   0.         341.87679118]
+ [  0.         533.02410527 234.64224561]
+ [  0.           0.           1.        ]]
+</pre></p>
+        
+    <p><pre>dist : 
+
+[[-2.79873491e-01  2.88853346e-02  1.21786507e-03  4.10040214e-05
+   1.26966543e-01]]
+</pre></p>
+
+    <p><pre>rvecs : 
+
+(array([[-0.37624308],
+       [ 0.06910103],
+       [-0.01933025]]), array([[ 0.05045152],
+       [-0.60044745],
+       [-0.18396141]]), array([[-0.348449  ],
+       [-0.06740475],
+       [-1.20052383]]), array([[ 0.19464863],
+       [-0.41927706],
+       [-0.1945103 ]]), array([[ 0.48199818],
+       [-0.17225414],
+       [-1.40725094]]), array([[-0.10421425],
+       [ 0.31995768],
+       [ 0.31466988]]), array([[0.70216325],
+       [0.15663338],
+       [0.16195567]]), array([[-0.47534781],
+       [ 0.089832  ],
+       [-0.22575642]]), array([[-0.35471162],
+       [ 0.24069993],
+       [ 0.20953112]]), array([[ 0.49818286],
+       [ 0.12068004],
+       [-0.29638631]]), array([[0.1001338 ],
+       [0.27656382],
+       [1.55853442]]))
+</pre></p>
+
+        <p><pre>tvecs : 
+
+(array([[-2.94277518],
+       [-2.99262805],
+       [12.77485538]]), array([[-2.15935402],
+       [-3.48208562],
+       [10.66754715]]), array([[-2.4961784 ],
+       [ 0.82168681],
+       [11.26157985]]), array([[-2.66690354],
+       [-3.1721285 ],
+       [10.5133849 ]]), array([[-3.48939025],
+       [ 1.63768871],
+       [11.88457053]]), array([[-3.71082167],
+       [-4.28099172],
+       [17.1071772 ]]), array([[-1.56253057],
+       [-2.70355871],
+       [ 8.88643609]]), array([[-2.31210808],
+       [-2.54514485],
+       [12.33118593]]), array([[-1.82371419],
+       [-3.37808063],
+       [13.62017136]]), array([[-3.39357831],
+       [-2.38488158],
+       [12.49275079]]), array([[ 3.84379381],
+       [-2.79500637],
+       [11.27054585]]))
+</pre></p>
+    
+    <h1>Calibração da sua webcam com a captura de suas próprias imagens de calibração: O programa “L2_chess.py” realiza a captura de multiplas imagens, permitindo salvar em arquivos numerados, sendo uma imagem de cada vez teclando uma tecla do teclado. Altere no programa o nome do arquivo a ser gravado. Use o nome de um dos integrantes da equipe. Execute e verifique o resultado:</h1>
+    <p>Com as imagens tiradas com a webcam no laboratório, rodamos o cal e obtivemos os seguintes valores para as matrizes das imagens:</p>
+    <p><pre>Camera matrix : 
+[[677.61980893   0.         320.51043775]
+ [  0.         683.04295525 236.71090516]
+ [  0.           0.           1.        ]]
+</pre></p>
+        
+    <p><pre>dist : 
+
+[[ 6.89597049e-03  4.33372834e-01  3.80245114e-05 -4.88140296e-04
+  -2.19835343e+00]]</pre></p>
+
+    <p><pre>rvecs : 
+
+(array([[-0.7385258 ],
+       [-0.19804767],
+       [-0.60327176]]), array([[-0.36958531],
+       [ 0.03654239],
+       [-0.01323737]]), array([[-0.17716037],
+       [ 0.66069695],
+       [ 1.3306828 ]]), array([[-0.64043513],
+       [ 0.02810794],
+       [-0.03800349]]), array([[-0.49511661],
+       [ 0.38233359],
+       [ 1.48284487]]), array([[-0.61852565],
+       [ 0.15748246],
+       [ 1.38967898]]), array([[-1.10494139],
+       [ 0.00399075],
+       [-0.00977897]]), array([[0.00430922],
+       [1.0376673 ],
+       [1.75137326]]), array([[-0.57947088],
+       [ 0.25746791],
+       [ 0.93661917]]), array([[-0.6172629 ],
+       [ 0.17281033],
+       [ 0.55832744]]), array([[-1.01691207],
+       [ 0.03213553],
+       [-0.02060205]]), array([[-0.61692681],
+       [ 0.64915222],
+       [ 1.43113196]]))
+</pre></p>
+
+        <p><pre>tvecs:
+        (array([[-4.46581139],
+       [-2.46570433],
+       [14.62228313]]), array([[-1.85882502],
+       [-3.75828928],
+       [13.93913388]]), array([[ 2.27383471],
+       [-3.19734031],
+       [12.37913933]]), array([[-2.58443953],
+       [-4.92784473],
+       [17.97723794]]), array([[ 3.46837847],
+       [-3.40678187],
+       [16.83408946]]), array([[ 2.56496595],
+       [-2.91862118],
+       [13.53790434]]), array([[-2.58459598],
+       [-3.48909216],
+       [14.69424154]]), array([[ 2.99925895],
+       [-2.80902384],
+       [11.5954642 ]]), array([[ 1.36940974],
+       [-4.9663727 ],
+       [17.85888991]]), array([[-0.65779736],
+       [-4.97646312],
+       [17.94693759]]), array([[-2.50408675],
+       [-4.2309807 ],
+       [16.68227676]]), array([[ 3.43102734],
+       [-3.87811278],
+       [16.84214126]]))
+</pre></p>
+    <br><br><br>
+    
+    <h1>Realize a calibração de uma outra câmera pessoal:
+Responda: liste todos os parametros obtidos, colocando-os nas formas de
+vetores e matrizes. Compare e analise as diferenças com os resultados
+anteriores.</h1>
+<p>Com as imagens tiradas com a segunda webcam no laboratório, rodamos o cal e obtivemos os seguintes valores para as matrizes das imagens:</p>
+    
+<p><pre>Camera matrix : 
+
+[[590.2402565    0.         321.89946656]
+ [  0.         589.95767341 246.09970152]
+ [  0.           0.           1.        ]]
+</pre></p>
+        
+    <p><pre>dist : 
+
+[[-0.37626937  0.15415629  0.00137856  0.00143504 -0.0314009 ]]
+</pre></p>
+
+    <p><pre>rvecs : 
+
+(array([[-7.29309323e-01],
+       [ 8.31887698e-03],
+       [ 3.56528742e-04]]), array([[-1.01450901],
+       [-0.72359738],
+       [-0.95461466]]), array([[-0.4337128 ],
+       [ 0.39116088],
+       [ 1.08590467]]), array([[-0.8084239 ],
+       [-0.04481489],
+       [-0.06675055]]), array([[-0.8636379 ],
+       [ 0.10134671],
+       [ 0.9057367 ]]), array([[-0.40977164],
+       [-0.06460803],
+       [-0.09214426]]), array([[-0.88856391],
+       [ 0.59597225],
+       [ 1.17374894]]), array([[ 0.00990779],
+       [-0.2308949 ],
+       [-1.33003034]]), array([[-0.22027642],
+       [-0.26394301],
+       [-1.54752135]]), array([[-0.39967798],
+       [ 0.45740841],
+       [ 1.52400142]]), array([[-0.06356349],
+       [ 0.06684032],
+       [ 0.9102597 ]]), array([[-0.14984688],
+       [ 0.05084462],
+       [ 1.54653861]]), array([[-0.81163967],
+       [-0.76203528],
+       [-1.38002775]]), array([[-0.26683516],
+       [ 0.29796654],
+       [ 0.9324469 ]]), array([[-0.97071779],
+       [ 0.7046334 ],
+       [ 1.10792777]]), array([[-0.79481551],
+       [-0.07928427],
+       [-0.13636791]]), array([[ 0.09017056],
+       [-0.11323979],
+       [-0.08813801]]), array([[-0.81338887],
+       [-0.32471816],
+       [-0.55209481]]), array([[-0.0845138 ],
+       [-0.03246271],
+       [ 1.03439438]]), array([[-1.18568483],
+       [ 0.00667233],
+       [-0.04034176]]))
+</pre></p>
+
+        <p><pre>tvecs : 
+
+(array([[-1.89106977],
+       [-3.55683569],
+       [13.48328725]]), array([[-3.99384655],
+       [-0.4261205 ],
+       [10.13634535]]), array([[ 2.52364133],
+       [-4.71867942],
+       [13.93581719]]), array([[-2.55022509],
+       [-3.55041594],
+       [13.59232496]]), array([[ 2.05642709],
+       [-4.34666543],
+       [14.48656722]]), array([[-2.58839899],
+       [-3.37813227],
+       [17.96641429]]), array([[ 2.13163946],
+       [-1.54102566],
+       [13.92928516]]), array([[-3.28023578],
+       [ 1.46715645],
+       [11.32423366]]), array([[-3.40933487],
+       [ 1.88863366],
+       [ 7.50593771]]), array([[ 3.65227901],
+       [-2.72681517],
+       [12.51173867]]), array([[ 1.81114542],
+       [-4.72965437],
+       [13.77654336]]), array([[ 4.03607123],
+       [-2.96666256],
+       [12.66973826]]), array([[-3.23171386],
+       [ 1.56147813],
+       [10.21656872]]), array([[ 2.41441047],
+       [-4.03852769],
+       [16.20888738]]), array([[ 3.74522095],
+       [-1.62555348],
+       [15.69458671]]), array([[-2.16904737],
+       [-3.01876682],
+       [14.95114024]]), array([[-2.72121217],
+       [-4.23022267],
+       [13.77301951]]), array([[-4.06598893],
+       [-2.18214454],
+       [12.17758459]]), array([[ 2.61131312],
+       [-4.40958854],
+       [13.99762561]]), array([[-1.78692286],
+       [-1.76076184],
+       [15.80412991]]))</pre></p>
+    <br><br><br>
+    
+    <h1>Experimento de remoção do efeito da lente da camera</h1>
+    <img src="TORCIDO.jpg" alt="torcido">
+    <p>A imagem acima mostra a foto retirada  diretamente da camera, esta camera em particular vimos que possui uma grande distorção. Essa distorção pode ser observada em algumas partes da foto, como por exemplos no teto, onde possui estruturas retas que aparentam estar curvadas na foto, assim como em outros elementos retos que aparecem com uma leve curvatura. A imagem abaixo é a mesma imagem, podem com o programa de distorção feito, seguindo as instruções fornecidas pelo professor. Como podemos ver, comparado com a foto anterior, ela apresenta uma correção nos elementos citados anteriormente, indicando que o processo de distorção foi realizado com sucesso.</p>
+    <img src="DISTORCIDO.jpg" alt="distorcido">
+    <br><br><br>
+        
+    <h1>Análise e Conclusão</h1>
+    <p>Esse laboratório serviu para entendermos o processo de aprendizado com Python e algumas funções. A maioria das funções já estavam escritas porem estavam com algum erro e/ou com parametros errados. Com algumas alterações desses codigos os programas rodaram conforme solicitado.</p>
+    <p>O grupo conseguiu observar algumas funções que serão utilizadas no futuro para Visão Computacional, tais como captura de tela, captura de vídeo e processamento dessas imagens e videos. Com essas ferramentas, podemos aplicar diversas ferramentas de processamento de dados, machine learning para diferentes aplicações.</p>
+    <br><br><br>
+    <a href="../index.html">Página principal</a>
+</body>
+</html>
