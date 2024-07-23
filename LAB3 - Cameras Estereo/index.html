@@ -37,6 +37,10 @@ forma a permitir a reprodução do experimento.</p>
     
 <h1>Parte 3<br>Executar passo a passo as etapas do exemplo de calibração de uma 
 câmera estereoscópica e geração de imagem 3D</h1>
+    <p>Para que seja realizada a calibração das câmeras, foi modificado o programa capture_images.py, utilizando os índices das câmeras, no caso 0 para a câmera esquerda e 2 para câmera direita em todos os pontos onde foi necessário. Também foi preciso mudar a quantidade de pontos que devem ser capturados dos tabuleiros para 6x8. Depois disso, foram tiradas 26 fotos de cada lado para a calibração da câmera.  Com as imagens capturadas, o programa calibrate.py foi adequado para utilizar as fotos capturadas em cada câmera para poder realizar a calibração das mesmas. </p>
+
+    <p>Para capturar os vídeos simultaneamente, foi modificado o programa do primeiro laboratório para captura de vídeo. Para ambas as câmera capturarem as imagens juntas, o que foi feito foi duplicar as linhas de código adicionando índices indicadores do lado de cada câmera.</p>
+    
     <p>Fotos tiradas para calibração do canal direito e do canal esquerdo</p>
     <img src="STEREORIMGS.png" alt="Foto">
     <br>
@@ -49,8 +53,8 @@ câmera estereoscópica e geração de imagem 3D</h1>
     <a href="https://drive.google.com/file/d/189kJFc_7R7oXHoicyslMxswehQH1xfYS/view?usp=sharing">Parametros py</a><br>
 <br><br>
     <p>Link para os videos criados:</p>
-    <a href="https://drive.google.com/file/d/1MVpqjGC8YXSC8NkhSh5lvqOI-xcDyJI-/view?usp=sharing">Video com camera esquerda</a><br>
-    <a href="https://drive.google.com/file/d/16ohk6rZZ-cxRcv05cjDpJiVREiWYmeNq/view?usp=sharing">Video com camera direita</a><br>
+    <a href="https://drive.google.com/file/d/1JqwIVIUK0oTH1jRDc8bjqpwEk4t7Dz35/view?usp=drive_link">Video com camera esquerda</a><br>
+    <a href="https://drive.google.com/file/d/16ohk6rZZ-cxRcv05cjDpJiVREiWYmeNq/view?usp=drive_link">Video com camera direita</a><br>
     <br><br><br>
     <p>Video com camera esquerda:</p>
      <video controls width="900" height="600">
@@ -66,6 +70,9 @@ câmera estereoscópica e geração de imagem 3D</h1>
     <h1>Análise e Conclusão</h1>
     <p>Esse laboratório serviu para entendermos o processo de aprendizado com Python e algumas funções. A maioria das funções já estavam escritas porem estavam com algum erro e/ou com parametros errados. Com algumas alterações desses codigos os programas rodaram conforme solicitado.</p>
     <p>O grupo conseguiu observar algumas funções que serão utilizadas no futuro para Visão Computacional, tais como captura de tela, captura de vídeo e processamento dessas imagens e videos. Com essas ferramentas, podemos aplicar diversas ferramentas de processamento de dados, machine learning para diferentes aplicações.</p>
+  <p>A percepção do vídeo gravado foi diferente para cada integrante do grupo, como era de se esperar, já que a distância entre as câmeras foi determinada a partir da distância dos olhos de um dos integrantes especificamente. Além disso, na imagem ao vivo, antes do tratamento, a sensação de profundidade não era a mesma de depois da gravação ser executada usando o programa movie3d.py adaptado para executar o vídeo do grupo.</p>
+    
+    
     <br><br><br>
     <a href="../index.html">Página principal</a>
 </body>
